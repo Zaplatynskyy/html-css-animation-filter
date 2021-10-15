@@ -98,9 +98,22 @@
     filter: sepia(80%);
 }
 
+@keyframes rotate360{
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .ex-10-icon {
     font-size: 60px;
+    animation: rotate360 0.8s linear reverse infinite;
 }
+
+
+
 .ex-11-icon {
     font-size: 60px;
 }
