@@ -132,8 +132,6 @@
     animation: rotate_partial 2s linear 0s 1;
 }
 
-
-
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
@@ -162,4 +160,52 @@
     background: #f5f5f5;
     width: 60px;
     height: 20px;
+}
+
+@keyframes transition12top {
+    0% {
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+    50% {
+        position: absolute;
+        top: -10px;
+        left: 68%;
+    }
+    100%{
+        position: absolute;
+        top: -10px;
+        left: 10%;
+    }
+}
+
+@keyframes transition12bottom {
+    0% {
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+    50% {
+        position: absolute;
+        bottom: -10px;
+        right: 68%;
+    }
+    100% {
+        position: absolute;
+        bottom: -10px;
+        right: 20%;
+    }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+    animation-name: transition12top;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+    animation-name: transition12bottom;
+    animation-duration: 3s;
+    animation-timing-function: linear;
 }
