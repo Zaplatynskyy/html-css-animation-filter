@@ -112,11 +112,28 @@
     animation: rotate360 0.8s linear reverse infinite;
 }
 
-
-
 .ex-11-icon {
     font-size: 60px;
 }
+
+@keyframes rotate_partial{
+    0 {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(320deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.ex-11-icon:hover {
+    animation: rotate_partial 2s linear 0s 1;
+}
+
+
+
 .ex-12-button, .ex-13-button {
     position: relative;
     display: block;
